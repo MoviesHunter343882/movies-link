@@ -1,5 +1,31 @@
 
 [ 
+  
+{
+  "Title": "Godzilla x Kong: The New Empire",
+  "Year": "2024",
+  "Rated": "PG-13",
+  "Released": "29 Mar 2024",
+  "Runtime": "115 min",
+  "Genre": "Action, Adventure, Sci-Fi",
+  "Director": "Adam Wingard",
+  "Writer": "Terry Rossio, Simon Barrett, Jeremy Slater",
+  "Actors": "Rebecca Hall, Brian Tyree Henry, Dan Stevens",
+  "Plot": "Two ancient titans, Godzilla and Kong, clash in an epic battle as humans unravel their intertwined origins and connection to Skull Island's mysteries.",
+  "Language": "Tamil, Telugu, Hindi, English",
+  "Country": "United States",
+  "Poster": "https://m.media-amazon.com/images/M/MV5BN2VjZmI4NTctMmVjMy00NTc0LWE1YzAtMTE0MTg1ZDY2NmQyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg",
+  "imdbRating": "6.7",
+  "imdbVotes": "10,888",
+  "imdbID": "tt14539740",
+  "Type": "movie",
+  "BoxOffice": "$37,000,000",
+  "Category":"English",
+  "Quality": "1080p",
+  "Bposter": "https://image.tmdb.org/t/p/original/jijH5xB6PTjRCm0pWj5w4uv7BRb.jpg",
+  "url":"tt14539740.html",
+  "Trailer":"https://www.youtube.com/watch?v=qqrpMRDuPfc"
+},
 {
   "Title": "Krishnamma",
   "Year": "2024",
@@ -701,31 +727,7 @@
   "url":"tt22987820.html",
   "Trailer":"https://www.youtube.com/watch?v=JrdixTnMl8E"
 },
-{
-  "Title": "Godzilla x Kong: The New Empire",
-  "Year": "2024",
-  "Rated": "PG-13",
-  "Released": "29 Mar 2024",
-  "Runtime": "115 min",
-  "Genre": "Action, Adventure, Sci-Fi",
-  "Director": "Adam Wingard",
-  "Writer": "Terry Rossio, Simon Barrett, Jeremy Slater",
-  "Actors": "Rebecca Hall, Brian Tyree Henry, Dan Stevens",
-  "Plot": "Two ancient titans, Godzilla and Kong, clash in an epic battle as humans unravel their intertwined origins and connection to Skull Island's mysteries.",
-  "Language": "Telugu, English",
-  "Country": "United States",
-  "Poster": "https://m.media-amazon.com/images/M/MV5BN2VjZmI4NTctMmVjMy00NTc0LWE1YzAtMTE0MTg1ZDY2NmQyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg",
-  "imdbRating": "6.7",
-  "imdbVotes": "10,888",
-  "imdbID": "tt14539740",
-  "Type": "movie",
-  "BoxOffice": "$37,000,000",
-  "Category":"English",
-  "Quality": "PreDVDRip",
-  "Bposter": "https://image.tmdb.org/t/p/original/jijH5xB6PTjRCm0pWj5w4uv7BRb.jpg",
-  "url":"tt14539740.html",
-  "Trailer":"https://www.youtube.com/watch?v=qqrpMRDuPfc"
-},
+
 {
   "Title": "Yuva",
   "Year": "2024",
