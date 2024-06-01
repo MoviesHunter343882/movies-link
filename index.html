@@ -1,0 +1,1321 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MoviesWeb.in.net</title>
+  <link href="style.css" rel="stylesheet">
+   <link href="main1.css" rel="stylesheet">
+  <link rel="shortcut icon" href="images/fav-icon.png">
+    <!--==Import-poppins-font====================-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;
+0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;dis
+play=swap" rel="stylesheet">
+    <!--==Import-Monoton-Font====================-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link href="https://fonts.googleapis.com/css2?family=Monoton&amp;display=swap" rel="stylesheet">
+  <link href="bootstrap-icons.css" rel="stylesheet">
+ <style>
+ /* a{
+    text-decoration: none;
+}*/
+::selection{
+    background-color: #ff0000;
+    color: #080808;
+}
+  button{
+    width: 100%;
+   height: 50px;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff09;
+    border: 1px solid #ffffff2c;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    color: #ffffff;
+    letter-spacing: 1px;
+    transition: all ease 0.3s;
+    padding:20px;
+}
+  .button1{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff09;
+    border: 1px solid #ffffff2c;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    color: #ffffff;
+    letter-spacing: 1px;
+    transition: all ease 0.3s;
+    padding:10px
+    margin-top:5px;
+    margin-bottom:5px;
+}
+button:hover{
+    background-color: #e70634;
+    transition: all ease 0.3s;
+}
+.button1:hover{
+    background-color: #e70634;
+    transition: all ease 0.3s;
+}
+  
+  .sesons-btn{
+    display: grid;
+        grid-template-columns: 1fr 1fr;
+    gap:5px;
+    justify-content: center;
+    align-items: center;
+  }
+  .welcome{
+        display: flex;
+        justify-content: center;
+        /*margin:209px 0px;*/
+        position: relative; 
+        overflow: hidden;
+        user-select: none;
+        padding: 0%;
+    }
+  .card{
+       /* height: 500px;
+        width: 500px;*/
+        background-color:rgba(0, 0, 0, 0.692);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        border: 1px solid #ffffff79;
+    }
+  .logo1{
+        color: #ff0000;
+        text-transform: uppercase;
+        font-size: 2rem;
+        font-weight: 500;
+        margin: 15px auto 0px 0px; 
+        display: flex;
+        align-items: center;
+        font-family: Monoton;
+        letter-spacing: 1px;
+         background-color: #0e0e0ec2; 
+        padding: 10px;
+        border-radius: 10px;
+        border: 1px solid #ffffff79;
+    
+    }
+    .logo1 span{
+    font-size: 0.7rem;
+    margin-left: 5px;
+    font-weight: 500;
+    letter-spacing: 2px;
+      font-family: poppins;
+    }
+  .search {
+    position: relative;
+    width: 100%;
+    height: 390px;
+    /* border: 1px solid #fff; */
+    /*right: 65px;*/
+    /*top: 70px;*/
+    overflow-y: auto;
+    background:--dark-color;
+    background-color: var(--dark-color);
+    margin:10px;
+    }
+    
+    /* section nav  */
+     .search::-webkit-scrollbar {
+        width: 5px;
+        background: transparent;
+        border-radius: 5px;
+        visibility: hidden;
+    }
+    
+    /* section nav  */
+     .search::-webkit-scrollbar-thumb {
+        width: 5px;
+    background: #ff0000;
+    border-radius: 5px;
+    visibility: hidden;
+    }
+    
+    /* section nav  */
+     .search:hover::-webkit-scrollbar {
+        visibility: visible;
+    }
+    
+    /* section nav  */
+     .search:hover::-webkit-scrollbar-thumb {
+        visibility: visible;
+    }
+    
+    /* section nav  */
+     .search  .search_card {
+        position: relative;
+    width: 100%;
+    height: 125px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    padding: 3px 0px;
+    text-decoration: none;
+     /*border: 1px solid #fff;*/
+    }
+    
+    /* section nav  */
+     .search_card::before {
+        content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #0e0e0ec2;
+    /* background: rgb(255, 255, 255, .1); */
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
+    z-index: -1;
+    }
+    
+    /* section nav  */
+  .search_card img {
+    width: 120px;
+    height: 75%;
+    border-radius: 2px;
+    margin-left: 10px;
+    
+    }
+    
+    /* section nav  */
+     .search_card .cont {
+        margin-left: 10px;
+    color: #fff;
+    }
+    
+    /* section nav  */
+     .search_card .cont h3 {
+        font-size: 15px;
+    line-height: 25px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: auto;
+    }
+    
+    /* section nav  */
+     .search_card .cont p {
+        font-size: 13px;
+    color: rgb(255, 255, 255, .8);
+    }
+    
+    /* section nav  */
+     .search_card .cont img {
+    padding: 0px 3px;
+    margin: 0px 0px 0px 10px;
+    font-weight: 500;
+    height: 10px;
+    width: auto;
+    }
+  @media(max-width:530px){
+  .search-box .search{
+            width: 97%;
+            top: 115px;
+            /* padding: 0px -1px; */
+            right: 8px;
+            
+        }
+    .search  .search_card {
+    height: 110px;
+    }
+    .search_card img {
+    width: 100px;
+    height: 75%;
+    }
+    .search_card .cont h3 {
+    width: 249px;
+    }
+    .movie-container{
+        display: grid;
+        grid-template-columns: 1fr;
+  }
+    button{
+    width: 100%;
+  
+    
+}
+  }
+  </style>
+  <style>
+
+:root{
+   /*--md-dark-color: #1d1d1d;
+    --dark-color: #080808;
+    --light-dark-color: #292929;*/
+    --yellow-color: #e70634;
+}
+*{
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+body{
+    font-family: 'Inter', sans-serif;
+   background: url('images/bg.png')no-repeat center center /cover black;
+}
+a{
+    text-decoration: none;
+}
+img{
+    width: 100%;
+    display: block;
+}
+.wrapper{
+    min-height: 100vh;
+    /*background-color: var(--dark-color);*/
+}
+.wrapper .container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+.search-container{
+    background-color: var(--md-dark-color);
+    height: 130px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+.logo{
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--light-dark-color);
+}
+.logo p{
+    font-size: 2rem;
+    color: #fff;
+    font-weight: bold;
+}
+.logo p span{
+    color: var(--yellow-color);
+}
+.search-element{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+}
+.search-element h3{
+    -ms-flex-item-align: center;
+        align-self: center;
+    margin-right: 1rem;
+    font-size: 1.3rem;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+.search-element .form-control{
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+    border: none;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    outline: none;
+    background-color: #080808;
+  color: #ffffff;
+    width: 350px;
+  border: 1px solid #ffffff2c;
+}
+.search-list{
+    position: absolute;
+    right: 0;
+    top: 100%;
+    max-height: 500px;
+    overflow-y: scroll;
+    z-index: 10;
+  background-color:rgba(0, 0, 0, 0.692);
+  
+}
+.search-list .search-list-item{
+    background-color: var(--light-dark-color);
+    padding: 0.5rem;
+    border-bottom: 1px solid var(--dark-color);
+    width: calc(350px - 8px);
+    color: #fff;
+    cursor: pointer;
+    -webkit-transition: background-color 200ms ease;
+    -o-transition: background-color 200ms ease;
+    transition: background-color 200ms ease;
+  border: 1px solid #ffffff2c;
+}
+.search-list .search-list-item:Hover{
+    background-color: #1f1f1f;
+}
+.search-list-item{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.search-item-thumbnail img{
+    width: 75px;
+    margin-right: 1rem;
+}
+.search-item-info h3{
+    font-weight: 600;
+    font-size: 1rem;
+}
+.search-item-info p{
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    font-weight: 600;
+    opacity: 0.6;
+}
+
+/* thumbnail */
+.search-list::-webkit-scrollbar{
+    width: 8px;
+}
+.search-list::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+            box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+.search-list::-webkit-scrollbar-thumb{
+    background-color: #ff0000;
+    outline: none;
+    border-radius: 10px;
+}
+
+/* js related class */
+.hide-search-list{
+    display: none;
+}
+
+/* movie result */
+.result-container{
+    padding: 3rem 0;
+}
+.movie-poster img{
+    max-width: 300px;
+    margin: 10px auto;
+    border: 4px solid #fff;
+}
+.movie-info{
+    text-align: center;
+    color: #fff;
+    padding-top: 3rem;
+}
+
+/* movie info stylings */
+.movie-title{
+    font-size: 2rem;
+    color: #ff0000;
+  font-family: Monoton;
+  font-weight: 500;
+}
+.movie-misc-info{
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 1rem;
+}
+.movie-info .year{
+    font-weight: 500;
+}
+.movie-info .rated{
+    background-color: #ff0000;
+    padding: 0.4rem;
+    margin: 0 0.4rem;
+    border-radius: 3px;
+    font-weight: 600;
+}
+.movie-info .released{
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+.movie-info .writer{
+    padding: 0.5rem;
+    margin: 1rem 0;
+}
+.movie-info .genre,{
+    background-color: #0e0e0ec2;
+    display: inline-block;
+    padding: 0.5rem;
+    border-radius: 3px;
+    color: white;
+  border: 1px solid #ffffff2c;
+}
+.movie-info .plot{
+    max-width: 400px;
+    margin: 1rem auto;
+}
+.movie-info .language{
+    color: var(--yellow-color);
+    font-style: italic;
+}
+.movie-info .awards{
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+.movie-info .awards i{
+    color: #ff0000;
+    margin: 1rem 0.7rem 0 0;
+}
+.movie-container{
+        display: flex;
+    
+    justify-content: center;
+    align-items: center;
+  }
+  .sesons-btn{
+    display: grid;
+        grid-template-columns: 1fr 1fr;
+    gap:5px;
+    
+    align-items: center;
+  }
+
+@media(max-width: 450px){
+    .logo p{
+        font-size: 1.4rem;
+    }
+    .search-element .form-control{
+        width: 90%;
+        margin: 0 auto;
+        padding: 0.5rem 1rem;
+    }
+    .search-element h3{
+        font-size: 1.4rem;
+    }
+    .search-list{
+        width: 90%;
+        right: 50%;
+        -webkit-transform: translateX(50%);
+            -ms-transform: translateX(50%);
+                transform: translateX(50%);
+    }
+    .search-list .search-list-item{
+        width: 100%;
+    }
+    .movie-misc-info{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .movie-misc-info li:nth-child(2){
+        margin: 0.8rem 0;
+    }
+}
+
+@media(min-width: 800px){
+    .search-element{
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+    }
+    .search-element h3{
+        margin-bottom: 0;
+    }
+    .result-grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .movie-info{
+        text-align: left;
+        padding-top: 0;
+    }
+    .movie-info .movie-misc-info{
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+        padding-left: 0;
+    }
+    .movie-info .plot{
+        margin-left: 0;
+    }
+    .movie-info .writer{
+        padding-left: 0;
+        margin-left: 0;
+    }
+   
+}
+</style>
+
+
+</head>
+
+<body>
+<div class = "wrapper">
+        <!-- logo -->
+  <div class="welcome">
+            <div class = "container">
+                <a href="homepage.html" class="logo1">Movie Web<span>.in.net</span></a>
+            </div>
+        </div>
+        <!-- end of logo -->
+        <!-- search container -->
+        <div class = "search-container">
+            <div class = "search-element">
+                <h3>Search: Movie, TvShow</h3>
+                <input type = "text" class="form-control" placeholder="Search Title ..." id = "movie-search-box" onkeyup="findMovies()" onclick = "findMovies()">
+
+                <div class = "search-list" id = "search-list">
+                    <!-- list here -->
+                    <!-- <div class = "search-list-item">
+                        <div class = "search-item-thumbnail">
+                            <img src = "medium-cover.jpg">
+                        </div>
+                        <div class = "search-item-info">
+                            <h3>Guardians of the Galaxy Vol. 2</h3>
+                            <p>2017</p>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <!-- end of search container -->
+
+
+    <div class="container" id="apialerts" style="display: none;">
+      <div class="alert alert-warning" role="alert">
+        No movies found!
+      </div>
+    </div>
+
+
+    <div class="container" id="apialerts" style="display: none;">
+      <div class="alert alert-warning" role="alert">
+        No movies found!
+      </div>
+    </div>
+  
+    
+
+    <nav id="pagination" style="display: none;">
+      <ul class="pagination justify-content-center">
+        <li class="page-item"><a class="page-link" href="#" id="prevBtn">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="#" id="nextBtn">Next</a></li>
+      </ul>
+    </nav>
+
+<div class = "container">
+            <div class = "result-container">
+                <div class = "result-grid" id = "result-grid">
+                    <!-- movie information here --
+                    <div class = "movie-poster">
+                        <img src = "medium-cover.jpg" alt = "movie poster">
+                       
+                      <div class="sesons-btn">
+                      
+                      </div>
+                      
+                    </div>
+                    <div class = "movie-info">
+                        <h3 class = "movie-title">Guardians of the Galaxy Vol. 2</h3>
+                        <ul class = "movie-misc-info">
+                            <li class = "year">Year: 2017</li>
+                            <li class = "rated">Ratings: PG-13</li>
+                            <li class = "released">Released: 05 May 2017</li>
+                        </ul>
+                        <p class = "genre"><b>Genre:</b> Action, Adventure, Comedy</p>
+                        <p class = "writer"><b>Writer:</b> James Gunn, Don Abnett, Andy Lanning</p>
+                        <p class = "actors"><b>Actors: </b>Chris Pratt, Zoe Saldana, Dave Bautista</p>
+                        <p class = "plot"><b>Plot:</b> The Guardians struggle to keep together as a team while dealing with their personal family issues, notably Star-Lords ecounter with his father the ambitious celestial being Ego.</p>
+                        <p class = "language"><b>Language:</b> English</p>
+                        <p class = "awards"><b><i class = "fas fa-award"></i></b> Nominated for 1 Oscar</p>-->
+                        
+                  
+                  
+                  
+                  
+        
+                    </div>
+                  <!-- end of result container -->
+              <div class="movie-container sesons-btn">
+                
+        <!-- Dynamic content will be inserted here -->
+  
+    </div>
+              
+                </div>
+    </div>
+         
+  
+  <div class="search">
+      
+    <!--<a href="#" class="search_card">
+            <img src="https://m.media-amazon.com/images/M/MV5BMTUwNTE0ODYzOF5BMl5BanBnXkFtZTgwOTc0ODE0OTE@._V1_SX300.jpg" alt="">
+    <i class="bi bi-play"></i>
+            <div class="cont">
+                <h3>The Boys </h3>
+                <p>Action, 2021 , <span>IMDB</span><i class="bi bi-star-fill"></i> 9.6</p>
+                
+            </div>
+        </a>
+      <a href="#" class="search_card">
+            <img src="https://m.media-amazon.com/images/M/MV5BMTUwNTE0ODYzOF5BMl5BanBnXkFtZTgwOTc0ODE0OTE@._V1_SX300.jpg" alt="">
+            <div class="cont">
+                <h3>The Boys </h3>
+                <p>Action, 2021 , <span>IMDB</span><i class="bi bi-star-fill"></i> 9.6</p>
+                
+            </div>
+        </a>
+      <a href="#" class="search_card">
+            <img src="https://m.media-amazon.com/images/M/MV5BMTUwNTE0ODYzOF5BMl5BanBnXkFtZTgwOTc0ODE0OTE@._V1_SX300.jpg" alt="">
+            <div class="cont">
+                <h3>The Boys </h3>
+                <p>Action, 2021 , <span>IMDB</span><i class="bi bi-star-fill"></i> 9.6</p>
+                
+            </div>
+        </a>
+      <a href="#" class="search_card">
+            <img src="https://m.media-amazon.com/images/M/MV5BMTUwNTE0ODYzOF5BMl5BanBnXkFtZTgwOTc0ODE0OTE@._V1_SX300.jpg" alt="">
+            <div class="cont">
+                <h3>The Boys </h3>
+                <p>Action, 2021 , <span>IMDB</span><i class="bi bi-star-fill"></i> 9.6</p>
+                
+            </div>
+        </a>
+      <a href="#" class="search_card">
+            <img src="https://m.media-amazon.com/images/M/MV5BMTUwNTE0ODYzOF5BMl5BanBnXkFtZTgwOTc0ODE0OTE@._V1_SX300.jpg" alt="">
+            <div class="cont">
+                <h3>The Boys </h3>
+                <p>Action, 2021 , <span>IMDB</span><i class="bi bi-star-fill"></i> 9.6</p>
+                
+            </div>
+        </a>-->
+      
+        </div>
+        <!-- end of result container -->
+  
+    
+  
+  
+
+    
+    
+  
+</body>
+
+<script>
+  const darkModeToggle = document.getElementById('btnSwitch');
+  const body = document.body;
+
+  darkModeToggle.addEventListener('click', () => {
+    if (body.getAttribute('data-bs-theme') === 'light') {
+      body.setAttribute('data-bs-theme', 'dark');
+      // Show dark mode icon
+      darkModeToggle.querySelector('.fa-moon').style.display = 'none';
+      // Hide light mode icon
+      darkModeToggle.querySelector('.fa-sun').style.display = 'inline-block';
+    } else {
+      body.setAttribute('data-bs-theme', 'light');
+      // Show light mode icon
+      darkModeToggle.querySelector('.fa-sun').style.display = 'none';
+      // Hide dark mode icon
+      darkModeToggle.querySelector('.fa-moon').style.display = 'inline-block';
+    }
+  });
+</script>
+
+
+<script>
+  function getSavedApiKeyFromCookies() {
+    var cookies = document.cookie.split(';');
+    for (var i = 0; i < cookies.length; i++) {
+      var cookie = cookies[i].trim();
+      if (cookie.startsWith("savedAPIomdb=")) {
+        //var savedAPI = cookie.substring("savedAPIomdb=".length);
+        var savedAPI = "9004dd77"
+        return savedAPI;
+      }
+    }
+    return savedAPI = null;
+
+
+    function fetchWithTimeout(url, timeout = 5000) {
+      return Promise.race([
+        fetch(url) ,
+        new Promise((_, reject) =>
+          setTimeout(() => reject(new Error('Request timed out')), timeout)
+        )
+      ]);
+    }
+  }
+</script>
+
+<script>
+  const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+  const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+</script>
+
+<script src='../../src/components/navspace.js'></script>
+
+<script>
+  fetch('../../src/components/nav.html')
+    .then(response => {
+      if (response.status === 200) {
+        return response.text();
+      } else {
+        throw new Error('File not found');
+      }
+    })
+    .then(data => {
+      document.getElementById('navbar').innerHTML = data;
+      displayRandomVariation();
+    })
+    .catch(error => {
+      if (error.message !== 'File not found') {
+        console.error('Error fetching navbar:', error);
+      }
+    });
+</script>
+
+
+
+<script>
+  fetch('https://raw.githubusercontent.com/sky7t/sky7t.github.io/main/src/components/footer.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('footer').innerHTML = data;
+    })
+    .catch(error => {
+      console.error('Error fetching footer:', error);
+    });
+</script>
+
+<script>
+  function alertZ(text) {
+    // Find the apialerts div element
+    var apialertsDiv = document.getElementById("apialerts");
+  
+    // Update the content with the provided text
+    apialertsDiv.innerHTML = '<div class="alert alert-warning" role="alert">' + text + '</div>';
+  
+    // Change the display style to block
+    apialertsDiv.style.display = "block";
+  }
+
+  </script>
+
+<script>
+  function alertZreset() {
+    // Find the apialerts div element
+    var apialertsDiv = document.getElementById("apialerts");
+
+    // Change the display style to none
+    apialertsDiv.style.display = "none";
+  }
+  </script>
+  
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+<script>
+const movieSearchBox = document.getElementById('movie-search-box');
+const searchList = document.getElementById('search-list');
+const resultGrid = document.getElementById('result-grid');
+
+// load movies from API
+async function loadMovies(searchTerm){
+  alertZreset()
+    const URL = `https://omdbapi.com/?s=${searchTerm}&page=1&apikey=43910352`;
+    const res = await fetch(`${URL}`);
+    const data = await res.json();
+    // console.log(data.Search);
+    if(data.Response == "True") displayMovieList(data.Search);
+}
+
+function findMovies(){
+  alertZreset()
+    let searchTerm = (movieSearchBox.value).trim();
+    if(searchTerm.length > 0){
+        searchList.classList.remove('hide-search-list');
+        loadMovies(searchTerm);
+    } else {
+        searchList.classList.add('hide-search-list');
+    }
+}
+
+function displayMovieList(movies){
+  alertZreset()
+    searchList.innerHTML = "";
+    for(let idx = 0; idx < movies.length; idx++){
+        let movieListItem = document.createElement('div');
+        movieListItem.dataset.id = movies[idx].imdbID; // setting movie id in  data-id
+        movieListItem.classList.add('search-list-item');
+        if(movies[idx].Poster != "N/A")
+            moviePoster = movies[idx].Poster;
+        else 
+            moviePoster = "image_not_found.png";
+
+        movieListItem.innerHTML = `
+        <div class = "search-item-thumbnail">
+            <img src = "${moviePoster}">
+        </div>
+        <div class = "search-item-info">
+            <h3>${movies[idx].Title}</h3>
+            <p>${movies[idx].Year}</p>
+        </div>
+        `;
+        searchList.appendChild(movieListItem);
+    }
+    loadMovieDetails();
+}
+
+function loadMovieDetails(){
+  alertZreset()
+    const searchListMovies = searchList.querySelectorAll('.search-list-item');
+    searchListMovies.forEach(movie => {
+        movie.addEventListener('click', async () => {
+            // console.log(movie.dataset.id);
+            searchList.classList.add('hide-search-list');
+            movieSearchBox.value = "";
+            const result = await fetch(`http://www.omdbapi.com/?i=${movie.dataset.id}&apikey=fc1fef96`);
+            const movieDetails = await result.json();
+            console.log(movieDetails);
+            displayMovieDetails(movieDetails);
+        });
+    });
+}
+
+
+
+function displayMovieDetails(details){
+  
+    resultGrid.innerHTML = `
+    <div class = "movie-poster">
+        <img src = "${(details.Poster != "N/A") ? details.Poster : "image_not_found.png"}" alt = "movie poster">
+    </div>
+    <div class = "movie-info">
+        <h3 class = "movie-title card">${details.Title}</h3>
+        <ul class = "movie-misc-info">
+            <li class = "year">Year: ${details.Year}</li>
+            <li class = "rated">Ratings: ${details.Rated}</li>
+            <li class = "released">Released: ${details.Released}</li>
+        </ul>
+        <p class = "genre"><b>Genre:</b> ${details.Genre}</p>
+        <p class = "writer"><b>Writer:</b> ${details.Writer}</p>
+        <p class = "actors"><b>Actors: </b>${details.Actors}</p>
+        <p class = "plot"><b>Plot:</b> ${details.Plot}</p>
+       
+        <p class = "awards"><b><i class = "fas fa-award"></i></b> ${details.Awards}</p>
+      ${details.Type === 'series' ? `
+          <a class="button1" onclick="displaySeasons('${details.imdbID}')">Seasons</a>
+          ` : ''}
+                     ${details.Type === 'movie' ? `<a class="button1" href="https://player.autoembed.cc/embed/movie/${details.imdbID}">Watch</a>` : ''}
+   
+    </div>
+    `;
+}
+
+
+
+
+
+
+window.addEventListener('click', (event) => {
+    if(event.target.className != "form-control"){
+        searchList.classList.add('hide-search-list');
+    }
+  
+  
+  
+  
+  // Function to fetch and display episodes for a specific season
+function displayEpisodes(imdbID, seasonNumber) {
+  alertZreset()
+  fetchWithTimeout(`https://www.omdbapi.com/?i=${imdbID}&Season=${seasonNumber}&apikey=43910352`)
+     
+    .then(data => {
+      const episodes = data.Episodes;
+      let episodePromises = []; // Array to store episode fetch promises
+
+      episodes.forEach(episode => {
+        const promise = fetchWithTimeout(`https://www.omdbapi.com/?i=${episode.imdbID}&apikey=43910352`)
+           
+          .then(episodeData => episodeData);
+        
+        episodePromises.push(promise);
+      });
+
+      // Wait for all episode fetch promises to complete
+      return Promise.all(episodePromises);
+    })
+    .then(episodesData => {
+      let episodeCards = `
+      
+        <div class="row">`; // Start a new row for episodes
+
+      episodesData.forEach(episodeData => {
+        episodeCards += `
+        
+        <a class="search_card" href="https://player.autoembed.cc/embed/tv/${imdbID}/${seasonNumber}/${episodeData.Episode}" >
+            <img src="${episodeData.Poster}" alt="${episodeData.Title}">
+            <div class="cont">
+                <h3>${episodeData.Title} - ${episodeData.Episode}</h3>
+                <p>${episodeData.Runtime}, ${episodeData.Rated} , <span>IMDB</span><i class="bi bi-star-fill"></i> ${episodeData.imdbRating}</p>
+                
+            </div>
+        </a>
+        
+        `;
+
+        // Check if three episodes have been added to the row
+        if ((episodesData.indexOf(episodeData) + 1) % 3 === 0) {
+          episodeCards += '</div>'; // Close the current row and start a new one
+        }
+      });
+
+      
+
+      document.querySelector('.search').innerHTML = episodeCards;
+    })
+    .catch(error => {
+      console.error("Error fetching episodes:", error);
+      alertZ("Error fetching episodes. Please try again.");
+    });
+}
+});
+  alertZreset()
+   document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("message-form");
+  const chatContainer = document.querySelector(".movie-container");
+
+  form.addEventListener("submit", function (event) {
+    event.preventDefault(); // Prevent default form submission
+
+    const apiKey = getSavedApiKeyFromCookies(); // Get the saved API key
+    const searchText = document.getElementById("movie-input").value; // Get the search text
+
+    if (searchText && apiKey) {
+        const encodedSearchText = encodeURIComponent(searchText); // Encode the search text
+        const apiUrl =  `https://www.omdbapi.com/?s=${searchText}&apikey=43910352`;
+
+      fetchWithTimeout(apiUrl)
+
+        .then(data => {
+          if (data.Response === "True") {
+            displayMovies(data.Search);
+            document.getElementById('pagination').style.display = 'block';
+          } else {
+            alertZ("No movies found!");
+          }
+        })
+        .catch(error => {
+          console.error("Error fetching movie data:", error);
+          alertZ("Error fetching movie data. Please try again.");
+        });
+    } else {
+      alertZ("Please enter the search text.");
+    }
+  });
+});
+
+function fetchWithTimeout(url, timeout = 5000) {
+      return Promise.race([
+        fetch(url).then(response => response.json()),
+        new Promise((_, reject) =>
+          setTimeout(() => reject(new Error('Request timed out')), timeout)
+        )
+      ]);
+    }
+
+// Function to display movies
+let apiKey;
+
+// Function to fetch and display movies or series
+function displayMovies(movies) {
+  alertZreset()
+  const chatContainer = document.querySelector(".movie-container");
+  chatContainer.innerHTML = ""; // Clear previous content
+
+  let row = '<div class="row">'; // Start a new row
+
+  movies.forEach((movie, index) => {
+    if (index > 0 && index % 3 === 0) {
+      // Close the current row and start a new one for every three movies
+      row += '</div><div class="row">';
+    }
+
+    let movieElement = `
+      <div class="col-md-4 mb-3">
+        <div class="card border-success" style="height: 22rem;">
+          <div class="card-body text-success">
+            <a onclick="displayPost('${movie.imdbID}')"
+              target="_blank">
+              <img src="${movie.Poster}" alt="${movie.Title}" style="width: 175px; height: 259px;" class="movie-poster">
+            </a>
+            <div class="bg-transparent" style="font-size: 14px; font-weight: bold; position: absolute; top: 0; right: 0; padding: 5px;">
+              ${movie.Year}
+            </div>
+          </div>
+          <div class="card-footer border-success" style="font-size: 14px; font-weight: bold;">
+            ${movie.Title} - ${movie.Type}
+            ${movie.Type === 'series' ? `<button class="btn btn-primary btn-sm float-end" onclick="displaySeasons('${movie.imdbID}')">Seasons</button>` : ''}
+          </div>
+        </div>
+      </div>
+    `;
+    row += movieElement;
+  });
+
+  row += '</div>'; // Close the last row
+  chatContainer.innerHTML = row;
+}
+
+
+
+
+// Function to fetch and display seasons for a series
+function displaySeasons(imdbID) {
+  alertZreset()
+  fetchWithTimeout(`https://www.omdbapi.com/?i=${imdbID}&apikey=43910352`, 5000)
+     
+    .then(data => {
+      const seasons = data.totalSeasons;
+      let seasonButtons = '';
+
+      for (let i = 1; i <= seasons; i++) {
+        seasonButtons += `
+          <button class="btn btn-primary season-btn" data-imdbID="${imdbID}" data-season="${i}">Season ${i}</button>
+        `;
+      }
+
+     
+      document.querySelector('.movie-container').innerHTML = seasonButtons;
+    })
+    .catch(error => {
+      console.error("Error fetching series data:", error);
+      alertZ("Error fetching series data. Please try again.");
+    });
+}
+
+
+// Function to fetch and display episodes for a specific season
+function displayEpisodes(imdbID, seasonNumber) {
+  alertZreset()
+  fetchWithTimeout(`https://www.omdbapi.com/?i=${imdbID}&Season=${seasonNumber}&apikey=43910352`)
+     
+    .then(data => {
+      const episodes = data.Episodes;
+      let episodePromises = []; // Array to store episode fetch promises
+
+      episodes.forEach(episode => {
+        const promise = fetchWithTimeout(`https://www.omdbapi.com/?i=${episode.imdbID}&apikey=43910352`)
+           
+          .then(episodeData => episodeData);
+        
+        episodePromises.push(promise);
+      });
+
+      // Wait for all episode fetch promises to complete
+      return Promise.all(episodePromises);
+    })
+    .then(episodesData => {
+      let episodeCards = `
+      
+        <div class="row">`; // Start a new row for episodes
+
+      episodesData.forEach(episodeData => {
+        episodeCards += `
+        
+        <a class="search_card" href="https://player.autoembed.cc/embed/tv/${imdbID}/${seasonNumber}/${episodeData.Episode}" >
+            <img src="${episodeData.Poster}" alt="${episodeData.Title}">
+            <div class="cont">
+                <h3>${episodeData.Title} - ${episodeData.Episode}</h3>
+                <p>${episodeData.Runtime}, ${episodeData.Rated} , <span>IMDB</span><i class="bi bi-star-fill"></i> ${episodeData.imdbRating}</p>
+                
+            </div>
+        </a>
+        
+        `;
+
+        // Check if three episodes have been added to the row
+        if ((episodesData.indexOf(episodeData) + 1) % 3 === 0) {
+          episodeCards += '</div>'; // Close the current row and start a new one
+        }
+      });
+
+      
+
+      document.querySelector('.search').innerHTML = episodeCards;
+    })
+    .catch(error => {
+      console.error("Error fetching episodes:", error);
+      alertZ("Error fetching episodes. Please try again.");
+    });
+}
+
+// Event listener for movie-container
+document.querySelector('.movie-container').addEventListener('click', function(event) {
+  const target = event.target;
+
+  // Check if the clicked item is a series
+  if (target.closest('.card') && target.closest('.card').textContent.includes('series')) {
+    const imdbID = target.closest('.card').querySelector('a').href.split('/')[4]; // Extract IMDb ID from the anchor link
+    displaySeasons(imdbID);
+  }
+  
+  // Check if the clicked item is a season button
+  if (target.classList.contains('season-btn')) {
+    const imdbID = target.getAttribute('data-imdbID');
+    const seasonNumber = target.getAttribute('data-season');
+    displayEpisodes(imdbID, seasonNumber);
+  }
+
+  // Check if the clicked item is a back button
+  if (target.classList.contains('back-btn')) {
+    const searchText = document.getElementById("movie-input").value; // Get the search text
+    const encodedSearchText = encodeURIComponent(searchText); // Encode the search text
+    const apiUrl = `https://www.omdbapi.com/?s=${encodedSearchText}&apikey=43910352`;
+
+    fetchWithTimeout(apiUrl)
+       
+      .then(data => {
+        if (data.Response === "True") {
+          displayMovies(data.Search);
+          document.getElementById('pagination').style.display = 'block';
+        } else {
+          alertZ("No movies found!");
+        }
+      })
+      .catch(error => {
+        console.error("Error fetching movie data:", error);
+        alertZ("Error fetching movie data. Please try again.");
+      });
+  }
+});
+
+// Function to handle form submission
+document.getElementById("message-form").addEventListener("submit", function(event) {
+  event.preventDefault(); // Prevent default form submission
+
+  apiKey = getSavedApiKeyFromCookies(); // Get the saved API key
+  const searchText = document.getElementById("movie-input").value; // Get the search text
+
+  if (searchText && apiKey) {
+    const encodedSearchText = encodeURIComponent(searchText); // Encode the search text
+    const apiUrl = `https://www.omdbapi.com/?s=${encodedSearchText}&apikey=43910352`;
+
+    fetchWithTimeout(apiUrl)
+       
+      .then(data => {
+        if (data.Response === "True") {
+          displayMovies(data.Search);
+          document.getElementById('pagination').style.display = 'block';
+        } else {
+          alertZ("No movies found!");
+        }
+      })
+      .catch(error => {
+        console.error("Error fetching movie data:", error);
+        alertZ("Error fetching movie data. Please try again.");
+      });
+  } else {
+    alertZ("Please enter the search text and save the API key.");
+  }
+});
+
+</script>
+
+
+<script>
+  alertZreset()
+    let page = 1; // Initialize page number
+  
+    // Function to fetch movie data based on page number
+    function fetchMovies(apiUrl, page) {
+    fetchWithTimeout(apiUrl)
+         
+        .then(data => {
+        if (data.Response === "True") {
+            displayMovies(data.Search);
+            window.scrollTo({ top: 0, behavior: 'smooth' }); // Scroll to the top of the page
+        } else {
+          alertZ("No movies found!");
+        }
+        })
+        .catch(error => {
+        console.error("Error fetching movie data:", error);
+        alertZ("Error fetching movie data. Please try again.");
+        });
+    }
+
+  
+    // Function to handle Next button click
+    document.getElementById("nextBtn").addEventListener("click", function(event) {
+      event.preventDefault();
+      page++;
+      const apiKey = getSavedApiKeyFromCookies();
+      const searchText = document.getElementById("movie-input").value;
+      const apiUrl = `https://www.omdbapi.com/?s=${searchText}&page=${page}&apikey=43910352`;
+      fetchMovies(apiUrl);
+    });
+  
+    // Function to handle Previous button click
+    document.getElementById("prevBtn").addEventListener("click", function(event) {
+      event.preventDefault();
+      if (page > 1) {
+        page--;
+        const apiKey = getSavedApiKeyFromCookies();
+        const searchText = document.getElementById("movie-input").value;
+        const apiUrl = `https://www.omdbapi.com/?s=${searchText}&page=${page}&apikey=43910352`;
+        fetchMovies(apiUrl);
+      }
+    });
+  
+    // Initial form submission remains unchanged
+    document.addEventListener("DOMContentLoaded", function () {
+      const form = document.getElementById("message-form");
+      const chatContainer = document.querySelector(".movie-container");
+  
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+        page = 1; // Reset page number on new search
+        const apiKey = getSavedApiKeyFromCookies();
+        const searchText = document.getElementById("movie-input").value;
+        const apiUrl = `https://www.omdbapi.com/?s=${searchText}&page=${page}&apikey=43910352`;
+        fetchMovies(apiUrl);
+      });
+    });
+  
+  </script>
+</html>
+
